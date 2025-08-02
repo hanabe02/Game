@@ -1,31 +1,45 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
+    // 컴파일 대상 ECMAScript 버전
+    "target": "ESNext",
+    // 모듈 시스템: Webpack/Bundler와 호환되도록 설정
+    "module": "ESNext",
+    // 엄격한 타입 검사 (true이면 타입 안정성 ↑, 개발은 다소 까다로움)
     "strict": true,
+    // JSX를 어떻게 처리할 것인지 (Vue에서는 preserve)
     "jsx": "preserve",
+    // 모듈 해석 방식: Node.js 스타일
     "moduleResolution": "node",
+    // 데코레이터 사용 허용 (Class 기반 Vue 컴포넌트 쓸 경우)
     "experimentalDecorators": true,
+    // 타입 라이브러리 검사 생략 (컴파일 속도 ↑)
     "skipLibCheck": true,
+    // CommonJS 모듈 호환
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    // 대소문자 구분 강제 → cross-platform 안전
     "forceConsistentCasingInFileNames": true,
+    // class field 정의 방식 (Vue 3에서는 true 권장)
     "useDefineForClassFields": true,
+    // sourcemap 생성 (디버깅용)
     "sourceMap": true,
+    // 절대경로 설정 (@ → src)
     "baseUrl": ".",
-    "types": [
-      "webpack-env"
-    ],
     "paths": {
       "@/*": [
         "src/*"
       ]
     },
+    // 전역 타입 정의 목록
+    "types": [
+      "webpack-env"
+    ],
+    // 사용할 내장 라이브러리 (DOM 조작 및 최신 JS 기능 포함)
     "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
+      "ESNext",
+      "DOM",
+      "DOM.Iterable",
+      "ScriptHost"
     ]
   },
   "include": [
