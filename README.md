@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # game-main
 
 ## Project setup
@@ -22,3 +23,6 @@ pnpm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+game
+>>>>>>> 339503151c9ce292a76a43849e99bd139bda4947
