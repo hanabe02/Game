@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # game-main
 
 ## Project setup
